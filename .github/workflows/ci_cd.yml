@@ -61,7 +61,7 @@ jobs:
           exit-code: '0'
           severity: CRITICAL,HIGH    
   deploy-ecs:
-    needs: scan
+    needs: scan-image
     runs-on: ubuntu-latest
     steps:
       - name: Configure AWS credentials
